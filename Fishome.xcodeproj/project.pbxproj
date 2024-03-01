@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581593852B90416D0007DF46 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 581593842B90416D0007DF46 /* KakaoSDK */; };
+		581593872B90416D0007DF46 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 581593862B90416D0007DF46 /* KakaoSDKAuth */; };
+		581593892B90416D0007DF46 /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = 581593882B90416D0007DF46 /* KakaoSDKCert */; };
+		5815938B2B90416D0007DF46 /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5815938A2B90416D0007DF46 /* KakaoSDKCertCore */; };
+		5815938D2B90416D0007DF46 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 5815938C2B90416D0007DF46 /* KakaoSDKCommon */; };
+		5815938F2B90416D0007DF46 /* KakaoSDKFriend in Frameworks */ = {isa = PBXBuildFile; productRef = 5815938E2B90416D0007DF46 /* KakaoSDKFriend */; };
+		581593912B90416D0007DF46 /* KakaoSDKFriendCore in Frameworks */ = {isa = PBXBuildFile; productRef = 581593902B90416D0007DF46 /* KakaoSDKFriendCore */; };
+		581593932B90416D0007DF46 /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = 581593922B90416D0007DF46 /* KakaoSDKNavi */; };
+		581593952B90416D0007DF46 /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = 581593942B90416D0007DF46 /* KakaoSDKShare */; };
+		581593972B90416D0007DF46 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 581593962B90416D0007DF46 /* KakaoSDKTalk */; };
+		581593992B90416D0007DF46 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 581593982B90416D0007DF46 /* KakaoSDKTemplate */; };
+		5815939B2B90416D0007DF46 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 5815939A2B90416D0007DF46 /* KakaoSDKUser */; };
+		5815939F2B904F550007DF46 /* KakaoAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */; };
+		581593A22B905DFB0007DF46 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A12B905DFB0007DF46 /* GoogleSignIn */; };
+		581593A42B905DFB0007DF46 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A32B905DFB0007DF46 /* GoogleSignInSwift */; };
+		5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */; };
+		5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1762B8C7DF0008CC7D6 /* ContentView.swift */; };
+		5890E1792B8C7DF1008CC7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */; };
+		5890E17C2B8C7DF1008CC7D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */; };
+		5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1872B8DC47B008CC7D6 /* LoginView.swift */; };
+		58C5CF4F2B8EEF1600558C37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */; };
+		58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF562B8EF6A900558C37 /* GeneralTF.swift */; };
+		58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF582B8EFE0300558C37 /* SecureTF.swift */; };
+		58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF5A2B8EFF9C00558C37 /* GeneralBtn.swift */; };
+		58C5CF5D2B8F034A00558C37 /* SocialLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF5C2B8F034A00558C37 /* SocialLoginBtn.swift */; };
+		58C5CF5F2B8F687C00558C37 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF5E2B8F687C00558C37 /* SignUpView.swift */; };
+		58C5CF612B8F8C5600558C37 /* KeyboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		581593822B9040460007DF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5815939C2B90420E0007DF46 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthViewModel.swift; sourceTree = "<group>"; };
+		5890E1712B8C7DF0008CC7D6 /* Fishome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishomeApp.swift; sourceTree = "<group>"; };
+		5890E1762B8C7DF0008CC7D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5890E1872B8DC47B008CC7D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		58C5CF562B8EF6A900558C37 /* GeneralTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTF.swift; sourceTree = "<group>"; };
+		58C5CF582B8EFE0300558C37 /* SecureTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTF.swift; sourceTree = "<group>"; };
+		58C5CF5A2B8EFF9C00558C37 /* GeneralBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBtn.swift; sourceTree = "<group>"; };
+		58C5CF5C2B8F034A00558C37 /* SocialLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginBtn.swift; sourceTree = "<group>"; };
+		58C5CF5E2B8F687C00558C37 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5890E16E2B8C7DF0008CC7D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581593912B90416D0007DF46 /* KakaoSDKFriendCore in Frameworks */,
+				5815938B2B90416D0007DF46 /* KakaoSDKCertCore in Frameworks */,
+				581593892B90416D0007DF46 /* KakaoSDKCert in Frameworks */,
+				581593A22B905DFB0007DF46 /* GoogleSignIn in Frameworks */,
+				581593992B90416D0007DF46 /* KakaoSDKTemplate in Frameworks */,
+				581593932B90416D0007DF46 /* KakaoSDKNavi in Frameworks */,
+				581593852B90416D0007DF46 /* KakaoSDK in Frameworks */,
+				5815938D2B90416D0007DF46 /* KakaoSDKCommon in Frameworks */,
+				581593872B90416D0007DF46 /* KakaoSDKAuth in Frameworks */,
+				581593A42B905DFB0007DF46 /* GoogleSignInSwift in Frameworks */,
+				5815939B2B90416D0007DF46 /* KakaoSDKUser in Frameworks */,
+				581593972B90416D0007DF46 /* KakaoSDKTalk in Frameworks */,
+				5815938F2B90416D0007DF46 /* KakaoSDKFriend in Frameworks */,
+				581593952B90416D0007DF46 /* KakaoSDKShare in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5815939D2B904F3F0007DF46 /* SocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */,
+			);
+			path = SocialLogin;
+			sourceTree = "<group>";
+		};
+		5890E1682B8C7DF0008CC7D6 = {
+			isa = PBXGroup;
+			children = (
+				5890E1732B8C7DF0008CC7D6 /* Fishome */,
+				5890E1722B8C7DF0008CC7D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5890E1722B8C7DF0008CC7D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5890E1712B8C7DF0008CC7D6 /* Fishome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5890E1732B8C7DF0008CC7D6 /* Fishome */ = {
+			isa = PBXGroup;
+			children = (
+				5815939D2B904F3F0007DF46 /* SocialLogin */,
+				581593822B9040460007DF46 /* Info.plist */,
+				5890E1862B8DC45F008CC7D6 /* ViewModel */,
+				5890E1852B8DC459008CC7D6 /* View */,
+				5890E1842B8DC455008CC7D6 /* Model */,
+				5890E1832B8DC40F008CC7D6 /* Assets */,
+				5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */,
+				5890E1762B8C7DF0008CC7D6 /* ContentView.swift */,
+				5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */,
+				5890E17A2B8C7DF1008CC7D6 /* Preview Content */,
+				58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */,
+				5815939C2B90420E0007DF46 /* Config.xcconfig */,
+			);
+			path = Fishome;
+			sourceTree = "<group>";
+		};
+		5890E17A2B8C7DF1008CC7D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5890E1832B8DC40F008CC7D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5890E1842B8DC455008CC7D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5890E1852B8DC459008CC7D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5890E1892B8DC5D1008CC7D6 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5890E1862B8DC45F008CC7D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5890E1892B8DC5D1008CC7D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				58C5CF4D2B8EEEFC00558C37 /* ViewModel */,
+				5890E18A2B8DC5DE008CC7D6 /* LoginComponents */,
+				5890E1872B8DC47B008CC7D6 /* LoginView.swift */,
+				58C5CF5E2B8F687C00558C37 /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5890E18A2B8DC5DE008CC7D6 /* LoginComponents */ = {
+			isa = PBXGroup;
+			children = (
+				58C5CF562B8EF6A900558C37 /* GeneralTF.swift */,
+				58C5CF582B8EFE0300558C37 /* SecureTF.swift */,
+				58C5CF5A2B8EFF9C00558C37 /* GeneralBtn.swift */,
+				58C5CF5C2B8F034A00558C37 /* SocialLoginBtn.swift */,
+			);
+			path = LoginComponents;
+			sourceTree = "<group>";
+		};
+		58C5CF4D2B8EEEFC00558C37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5890E1702B8C7DF0008CC7D6 /* Fishome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5890E17F2B8C7DF1008CC7D6 /* Build configuration list for PBXNativeTarget "Fishome" */;
+			buildPhases = (
+				5890E16D2B8C7DF0008CC7D6 /* Sources */,
+				5890E16E2B8C7DF0008CC7D6 /* Frameworks */,
+				5890E16F2B8C7DF0008CC7D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fishome;
+			packageProductDependencies = (
+				581593842B90416D0007DF46 /* KakaoSDK */,
+				581593862B90416D0007DF46 /* KakaoSDKAuth */,
+				581593882B90416D0007DF46 /* KakaoSDKCert */,
+				5815938A2B90416D0007DF46 /* KakaoSDKCertCore */,
+				5815938C2B90416D0007DF46 /* KakaoSDKCommon */,
+				5815938E2B90416D0007DF46 /* KakaoSDKFriend */,
+				581593902B90416D0007DF46 /* KakaoSDKFriendCore */,
+				581593922B90416D0007DF46 /* KakaoSDKNavi */,
+				581593942B90416D0007DF46 /* KakaoSDKShare */,
+				581593962B90416D0007DF46 /* KakaoSDKTalk */,
+				581593982B90416D0007DF46 /* KakaoSDKTemplate */,
+				5815939A2B90416D0007DF46 /* KakaoSDKUser */,
+				581593A12B905DFB0007DF46 /* GoogleSignIn */,
+				581593A32B905DFB0007DF46 /* GoogleSignInSwift */,
+			);
+			productName = Fishome;
+			productReference = 5890E1712B8C7DF0008CC7D6 /* Fishome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5890E1692B8C7DF0008CC7D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5890E1702B8C7DF0008CC7D6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5890E16C2B8C7DF0008CC7D6 /* Build configuration list for PBXProject "Fishome" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5890E1682B8C7DF0008CC7D6;
+			packageReferences = (
+				581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 5890E1722B8C7DF0008CC7D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5890E1702B8C7DF0008CC7D6 /* Fishome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5890E16F2B8C7DF0008CC7D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5890E17C2B8C7DF1008CC7D6 /* Preview Assets.xcassets in Resources */,
+				5890E1792B8C7DF1008CC7D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5890E16D2B8C7DF0008CC7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C5CF4F2B8EEF1600558C37 /* LoginViewModel.swift in Sources */,
+				58C5CF612B8F8C5600558C37 /* KeyboardMonitor.swift in Sources */,
+				5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */,
+				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
+				5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */,
+				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,
+				58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */,
+				5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */,
+				5815939F2B904F550007DF46 /* KakaoAuthViewModel.swift in Sources */,
+				58C5CF5F2B8F687C00558C37 /* SignUpView.swift in Sources */,
+				58C5CF5D2B8F034A00558C37 /* SocialLoginBtn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5890E17D2B8C7DF1008CC7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5815939C2B90420E0007DF46 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5890E17E2B8C7DF1008CC7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5815939C2B90420E0007DF46 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5890E1802B8C7DF1008CC7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fishome/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P95R3MRRWK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fishome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.Bin.Fishome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SpaceTalk_12ProMax;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5890E1812B8C7DF1008CC7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fishome/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P95R3MRRWK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fishome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.Bin.Fishome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SpaceTalk_12ProMax;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5890E16C2B8C7DF0008CC7D6 /* Build configuration list for PBXProject "Fishome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5890E17D2B8C7DF1008CC7D6 /* Debug */,
+				5890E17E2B8C7DF1008CC7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5890E17F2B8C7DF1008CC7D6 /* Build configuration list for PBXNativeTarget "Fishome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5890E1802B8C7DF1008CC7D6 /* Debug */,
+				5890E1812B8C7DF1008CC7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.20.0;
+			};
+		};
+		581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		581593842B90416D0007DF46 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		581593862B90416D0007DF46 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		581593882B90416D0007DF46 /* KakaoSDKCert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCert;
+		};
+		5815938A2B90416D0007DF46 /* KakaoSDKCertCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCertCore;
+		};
+		5815938C2B90416D0007DF46 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		5815938E2B90416D0007DF46 /* KakaoSDKFriend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriend;
+		};
+		581593902B90416D0007DF46 /* KakaoSDKFriendCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriendCore;
+		};
+		581593922B90416D0007DF46 /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		581593942B90416D0007DF46 /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		581593962B90416D0007DF46 /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		581593982B90416D0007DF46 /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		5815939A2B90416D0007DF46 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		581593A12B905DFB0007DF46 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		581593A32B905DFB0007DF46 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5890E1692B8C7DF0008CC7D6 /* Project object */;
+}

@@ -1,0 +1,19 @@
+//
+//  Config.xcconfig
+//  Fishome
+//
+//  Created by 조성빈 on 2/29/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+//고유한 키 값들을 변수로 사용.
+
+//카카오 네이티브 앱 키
+KAKAO_NATIVE_APP_KEY = ad5be4e793c739e3c28c8048b336757e
+
+//구글 클라이언트 ID/리버스드 클라이언트 ID
+//GOOGLE_CLIENT_ID = 620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i.apps.googleusercontent.com
+//GOOGLE_REVERSED_CLIENT_ID = 620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i
