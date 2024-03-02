@@ -22,6 +22,7 @@
 		5815939F2B904F550007DF46 /* KakaoAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */; };
 		581593A22B905DFB0007DF46 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A12B905DFB0007DF46 /* GoogleSignIn */; };
 		581593A42B905DFB0007DF46 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A32B905DFB0007DF46 /* GoogleSignInSwift */; };
+		5857E8062B9368030051BD36 /* GoogleAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */; };
 		5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */; };
 		5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1762B8C7DF0008CC7D6 /* ContentView.swift */; };
 		5890E1792B8C7DF1008CC7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		581593822B9040460007DF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5815939C2B90420E0007DF46 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthViewModel.swift; sourceTree = "<group>"; };
+		5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthViewModel.swift; sourceTree = "<group>"; };
 		5890E1712B8C7DF0008CC7D6 /* Fishome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishomeApp.swift; sourceTree = "<group>"; };
 		5890E1762B8C7DF0008CC7D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */,
+				5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */,
 			);
 			path = SocialLogin;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				58C5CF4F2B8EEF1600558C37 /* LoginViewModel.swift in Sources */,
 				58C5CF612B8F8C5600558C37 /* KeyboardMonitor.swift in Sources */,
 				5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */,
+				5857E8062B9368030051BD36 /* GoogleAuthViewModel.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
 				5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */,
 				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,

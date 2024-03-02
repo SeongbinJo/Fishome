@@ -56,7 +56,7 @@ class KakaoAuthViewModel : ObservableObject {
     }
     
     @MainActor
-    func handleKakaoLogin() {
+    func kakaoLogin() {
         Task {
             // 카카오톡 실행 가능 여부(설치 여부) 확인
             //설치 되어있을 경우.
@@ -64,12 +64,19 @@ class KakaoAuthViewModel : ObservableObject {
                 //카카오 앱으로 로그인
                 isLoggedIn = await handleWithKakaoApp()
                 print("카카오 로그인 상태 : ", isLoggedIn)
+                UserApi.shared.me { user, error in
+                    print("로그인된 카카오 계정 정보 : ", user?.kakaoAccount?.name, user?.kakaoAccount?.email)
+                }
+                
             }
             //설치 안 되어있을 경우.
             else {
                 //카카오 웹뷰로 로그인
                 isLoggedIn = await handleWithKakaoWebAccount()
                 print("카카오 로그인 상태 : ", isLoggedIn)
+                UserApi.shared.me { user, error in
+                    print("로그인된 카카오 계정 정보 : ", user?.kakaoAccount?.name, user?.kakaoAccount?.email)
+                }
             }
         }
     }

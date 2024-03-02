@@ -13,6 +13,7 @@ struct LoginView : View {
     @EnvironmentObject var loginViewModel: LoginViewModel
     
     @StateObject var kakaoVM = KakaoAuthViewModel()
+    @StateObject var googleVM = GoogleAuthViewModel()
     
     @State var loginToSignUpView: Bool = false
     
@@ -42,7 +43,8 @@ struct LoginView : View {
                         Button(action : {
                             print("회원가입 버튼 클릭.")
 //                            navigationPath.append("SignUp")
-                            kakaoVM.kakaoLogout()
+//                            kakaoVM.kakaoLogout()
+                            googleVM.googleLogout()
                         }){
                             Text("삐숌 회원이 되고싶어요!")
                                 .foregroundColor(Color(UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1)))

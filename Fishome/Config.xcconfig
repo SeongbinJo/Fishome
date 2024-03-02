@@ -15,5 +15,5 @@
 KAKAO_NATIVE_APP_KEY = ad5be4e793c739e3c28c8048b336757e
 
 //구글 클라이언트 ID/리버스드 클라이언트 ID
-//GOOGLE_CLIENT_ID = 620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i.apps.googleusercontent.com
-//GOOGLE_REVERSED_CLIENT_ID = 620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i
+GOOGLE_CLIENT_ID = 620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i.apps.googleusercontent.com
+GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.620966278603-p3u247atq7ergq5ofvfisqg3oflalg4i

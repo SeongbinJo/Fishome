@@ -8,6 +8,9 @@
 import SwiftUI
 import KakaoSDKCommon
 import KakaoSDKAuth
+import GoogleSignIn
+import KakaoSDKUser
+
 
 @main
 struct FishomeApp: App {
@@ -22,9 +25,33 @@ struct FishomeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().onOpenURL(perform: { url in
-                if (AuthApi.isKakaoTalkLoginUrl(url)) {
+            ContentView()
+                .onAppear {
+                    UserApi.shared.me { user, error in
+                        if user != nil {
+                            print("카카오톡 계정 로그인 상태 입니다.")
+                            print("카카오톡 이메일 : ", user?.kakaoAccount?.email)
+                            print("카카오톡 이름 : ", user?.kakaoAccount?.name)
+                        }else {
+                            print("카카오톡 계정 로그아웃 상태입니다.")
+                        }
+                    }
+                    GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                        //유저가 구글 로그인을 한 이력이 있는지 확인.
+                        if user != nil {
+                            print("구글 계정 로그인 상태입니다.")
+                            print("구글 이메일 : ", user?.profile?.email)
+                            print("구글 이름 : ", user?.profile?.name)
+                        }else {
+                            print("구글 계정 로그아웃 상태입니다.")
+                        }
+                    }
+                }
+                .onOpenURL(perform: { url in
+                if AuthApi.isKakaoTalkLoginUrl(url) {
                     AuthController.handleOpenUrl(url: url)
+                }else if GIDSignIn.sharedInstance.handle(url) {
+                    
                 }
             })
         }

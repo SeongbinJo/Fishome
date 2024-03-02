@@ -4,15 +4,25 @@
 <dict>
 	<key>KAKAO_NATIVE_APP_KEY</key>
 	<string>${KAKAO_NATIVE_APP_KEY}</string>
+    <key>GIDClientID</key>
+    <string>${GOOGLE_CLIENT_ID}</string>
 	<key>CFBundleURLTypes</key>
 	<array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>kakao${KAKAO_NATIVE_APP_KEY}</string>
+            </array>
+        </dict>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>kakao${KAKAO_NATIVE_APP_KEY}</string>
-			</array>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>${GOOGLE_REVERSED_CLIENT_ID}</string>
+            </array>
 		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
