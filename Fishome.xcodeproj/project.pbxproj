@@ -28,6 +28,7 @@
 		5890E1792B8C7DF1008CC7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */; };
 		5890E17C2B8C7DF1008CC7D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */; };
 		5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1872B8DC47B008CC7D6 /* LoginView.swift */; };
+		58BE7AF32B949BA100E85BB5 /* AppleAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE7AF22B949BA100E85BB5 /* AppleAuthViewModel.swift */; };
 		58C5CF4F2B8EEF1600558C37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */; };
 		58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF562B8EF6A900558C37 /* GeneralTF.swift */; };
 		58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF582B8EFE0300558C37 /* SecureTF.swift */; };
@@ -42,12 +43,14 @@
 		5815939C2B90420E0007DF46 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthViewModel.swift; sourceTree = "<group>"; };
 		5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthViewModel.swift; sourceTree = "<group>"; };
+		5857E8072B9382A90051BD36 /* Fishome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishome.entitlements; sourceTree = "<group>"; };
 		5890E1712B8C7DF0008CC7D6 /* Fishome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishomeApp.swift; sourceTree = "<group>"; };
 		5890E1762B8C7DF0008CC7D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5890E1872B8DC47B008CC7D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		58BE7AF22B949BA100E85BB5 /* AppleAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthViewModel.swift; sourceTree = "<group>"; };
 		58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		58C5CF562B8EF6A900558C37 /* GeneralTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTF.swift; sourceTree = "<group>"; };
 		58C5CF582B8EFE0300558C37 /* SecureTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTF.swift; sourceTree = "<group>"; };
@@ -82,15 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5815939D2B904F3F0007DF46 /* SocialLogin */ = {
-			isa = PBXGroup;
-			children = (
-				5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */,
-				5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */,
-			);
-			path = SocialLogin;
-			sourceTree = "<group>";
-		};
 		5890E1682B8C7DF0008CC7D6 = {
 			isa = PBXGroup;
 			children = (
@@ -110,11 +104,9 @@
 		5890E1732B8C7DF0008CC7D6 /* Fishome */ = {
 			isa = PBXGroup;
 			children = (
-				5815939D2B904F3F0007DF46 /* SocialLogin */,
+				5857E8072B9382A90051BD36 /* Fishome.entitlements */,
 				581593822B9040460007DF46 /* Info.plist */,
-				5890E1862B8DC45F008CC7D6 /* ViewModel */,
 				5890E1852B8DC459008CC7D6 /* View */,
-				5890E1842B8DC455008CC7D6 /* Model */,
 				5890E1832B8DC40F008CC7D6 /* Assets */,
 				5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */,
 				5890E1762B8C7DF0008CC7D6 /* ContentView.swift */,
@@ -141,26 +133,12 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		5890E1842B8DC455008CC7D6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5890E1852B8DC459008CC7D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				5890E1892B8DC5D1008CC7D6 /* Login */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5890E1862B8DC45F008CC7D6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5890E1892B8DC5D1008CC7D6 /* Login */ = {
@@ -188,7 +166,10 @@
 		58C5CF4D2B8EEEFC00558C37 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5815939E2B904F550007DF46 /* KakaoAuthViewModel.swift */,
+				5857E8052B9368030051BD36 /* GoogleAuthViewModel.swift */,
 				58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */,
+				58BE7AF22B949BA100E85BB5 /* AppleAuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -288,6 +269,7 @@
 				5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */,
 				5857E8062B9368030051BD36 /* GoogleAuthViewModel.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
+				58BE7AF32B949BA100E85BB5 /* AppleAuthViewModel.swift in Sources */,
 				5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */,
 				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,
 				58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */,
@@ -427,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fishome/Fishome.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -461,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fishome/Fishome.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

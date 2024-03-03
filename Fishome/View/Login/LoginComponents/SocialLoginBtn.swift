@@ -12,6 +12,7 @@ struct SocialLoginBtn: View {
     
     @StateObject var kakaoAuthVM = KakaoAuthViewModel()
     @StateObject var googleAuthVM = GoogleAuthViewModel()
+    @StateObject var appleAuthVM = AppleAuthViewModel()
     
     var buttonImageName: String
     

@@ -10,6 +10,7 @@ import KakaoSDKCommon
 import KakaoSDKAuth
 import GoogleSignIn
 import KakaoSDKUser
+import AuthenticationServices
 
 
 @main
