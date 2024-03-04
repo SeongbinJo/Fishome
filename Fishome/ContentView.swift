@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LoginView()
-            .environmentObject(LoginViewModel())
+//        LoginView()
+//            .environmentObject(LoginViewModel())
+        MainView()
+//        BottomTabView()
     }
 }
