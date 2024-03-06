@@ -10,9 +10,7 @@ import SwiftUI
 
 struct SocialLoginBtn: View {
     
-    @StateObject var kakaoAuthVM = KakaoAuthViewModel()
-    @StateObject var googleAuthVM = GoogleAuthViewModel()
-    @StateObject var appleAuthVM = AppleAuthViewModel()
+    @EnvironmentObject var loginVM: LoginViewModel
     
     var buttonImageName: String
     
@@ -24,18 +22,7 @@ struct SocialLoginBtn: View {
         GeometryReader { geometry in
             Button(action: {
                 //소셜 별 로그인 액션
-                switch buttonImageName {
-                case "kakao_Logo":
-                    print("카카오 로그인 눌림.")
-                    kakaoAuthVM.kakaoLogin()
-                case "google_Logo":
-                    print("구글 로그인 눌림.")
-                    googleAuthVM.googleLogin()
-                case "apple_Logo_white":
-                    print("애플 로그인 눌림.")
-                default:
-                    print("cannot found social logo.")
-                }
+                loginVM.actionBySocialLogin(status: buttonImageName)
             }){
                 Circle()
                 .overlay(

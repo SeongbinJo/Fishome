@@ -11,11 +11,7 @@ import _AuthenticationServices_SwiftUI
 
 struct LoginView : View {
     
-    @EnvironmentObject var loginViewModel: LoginViewModel
-    
-    @StateObject var kakaoVM = KakaoAuthViewModel()
-    @StateObject var googleVM = GoogleAuthViewModel()
-    @StateObject var appleVM = AppleAuthViewModel()
+    @EnvironmentObject var loginVM: LoginViewModel
     
     @State var loginToSignUpView: Bool = false
     
@@ -34,9 +30,9 @@ struct LoginView : View {
                         .padding(.bottom, geometry.size.height * 0.12)
                     //로컬 로그인 컴포넌트
                     VStack(alignment: .trailing, spacing : 0) {
-                        GeneralTF(textTF: $loginViewModel.localEmail, hint: "이메일", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
+                        GeneralTF(textTF: $loginVM.localEmail, hint: "이메일", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
                         
-                        SecureTF(textTF: $loginViewModel.localPassword, hint: "비밀번호", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
+                        SecureTF(textTF: $loginVM.localPassword, hint: "비밀번호", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
                         GeneralBtn(buttonText: "로그인", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
                         Button(action : {
                             print("회원가입 버튼 클릭.")
@@ -68,7 +64,7 @@ struct LoginView : View {
                         SocialLoginBtn(buttonImageName: "google_Logo", imageSize: geometry.size.width * 0.1, backgroundColor: UIColor(red: 243/255, green: 242/255, blue: 243/255, alpha: 1))
                         SocialLoginBtn(buttonImageName: "apple_Logo_white", imageSize: geometry.size.width * 0.1, backgroundColor: UIColor(red: 1/255, green: 0/255, blue: 0/255, alpha: 1))
                             .overlay {
-                                SignInWithAppleButton(onRequest: appleVM.requestAppleLogin, onCompletion: appleVM.completionAppleLogin)
+                                SignInWithAppleButton(onRequest: loginVM.requestAppleLogin, onCompletion: loginVM.completionAppleLogin)
                                     .blendMode(.overlay)
                             }
                     }

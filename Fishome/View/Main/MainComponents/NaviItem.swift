@@ -29,7 +29,7 @@ struct NaviTrailingItem : View {
     var body: some View {
         HStack(spacing: 20) {
             Image(systemName: "bell.fill")
-            Image(systemName: "gearshape.fill")
+            Image(systemName: "map.fill")
         }
     }
 }

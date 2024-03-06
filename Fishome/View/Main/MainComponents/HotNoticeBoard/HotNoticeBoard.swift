@@ -18,10 +18,12 @@ struct HotNoticeBoard: View {
     var titleRecWidth: CGFloat
     var titleRecHeight: CGFloat
     
+    var noticeWidth: CGFloat
+    var noticeHeight: CGFloat
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
             Rectangle()
-                .frame(width: recWidth, height: recHeight)
                 .cornerRadius(20)
                 .foregroundColor(.white)
                 .opacity(0.6)
@@ -38,6 +40,12 @@ struct HotNoticeBoard: View {
                     .foregroundColor(.yellow)
                 Text(titleName)
             }
+            
+            HotNotices()
+                .frame(width: noticeWidth, height: noticeHeight)
+                .position(x: recWidth / 2, y: recHeight / 1.85)
+                
         }
+        .frame(width: recWidth, height: recHeight)
     }
 }

@@ -12,6 +12,6 @@ struct ContentView: View {
 //        LoginView()
 //            .environmentObject(LoginViewModel())
         MainView()
-//        BottomTabView()
+            .environmentObject(BottomTabbarViewModel())
     }
 }
