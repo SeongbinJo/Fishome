@@ -11,6 +11,7 @@ import KakaoSDKAuth
 import GoogleSignIn
 import KakaoSDKUser
 import AuthenticationServices
+import KakaoMapsSDK
 
 
 @main
@@ -21,7 +22,7 @@ struct FishomeApp: App {
     init() {
             // Kakao SDK 초기화
             KakaoSDK.initSDK(appKey: kakaoAppKey as! String)
-            print("카카오 네이비트 앱 키 : ", kakaoAppKey)
+            print("카카오 네이티브 앱 키 : ", kakaoAppKey)
         }
     
     var body: some Scene {

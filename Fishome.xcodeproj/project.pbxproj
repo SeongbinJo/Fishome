@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580A015B2B983C5B00DF1716 /* DummyFileForNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A015A2B983C5B00DF1716 /* DummyFileForNoticeView.swift */; };
-		580A015E2B9840E200DF1716 /* HotNotices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A015D2B9840E200DF1716 /* HotNotices.swift */; };
+		580A015B2B983C5B00DF1716 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A015A2B983C5B00DF1716 /* NoticeModel.swift */; };
+		580A015E2B9840E200DF1716 /* HotNoticeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A015D2B9840E200DF1716 /* HotNoticeContent.swift */; };
 		580A01602B98428B00DF1716 /* BottomTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A015F2B98428B00DF1716 /* BottomTabbarViewModel.swift */; };
 		580A01622B98433C00DF1716 /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A01612B98433C00DF1716 /* NoticeView.swift */; };
 		581593852B90416D0007DF46 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 581593842B90416D0007DF46 /* KakaoSDK */; };
@@ -31,12 +31,14 @@
 		585DE3192B95DBA800B38F57 /* NaviItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3182B95DBA800B38F57 /* NaviItem.swift */; };
 		585DE3202B95E89900B38F57 /* HotNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */; };
 		585DE3222B95E8E300B38F57 /* EggStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3212B95E8E300B38F57 /* EggStatus.swift */; };
-		585DE3262B95FDC200B38F57 /* NoticeComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3252B95FDC200B38F57 /* NoticeComponents.swift */; };
+		585DE3262B95FDC200B38F57 /* mapViewForNearShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */; };
 		5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */; };
 		5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1762B8C7DF0008CC7D6 /* ContentView.swift */; };
 		5890E1792B8C7DF1008CC7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */; };
 		5890E17C2B8C7DF1008CC7D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */; };
 		5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1872B8DC47B008CC7D6 /* LoginView.swift */; };
+		58B7AD692B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7AD682B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift */; };
+		58B7AD772B99EAA100A0CBF9 /* KakaoMapsSDK_SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 58B7AD762B99EAA100A0CBF9 /* KakaoMapsSDK_SPM */; };
 		58C5CF4F2B8EEF1600558C37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */; };
 		58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF562B8EF6A900558C37 /* GeneralTF.swift */; };
 		58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF582B8EFE0300558C37 /* SecureTF.swift */; };
@@ -48,8 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		580A015A2B983C5B00DF1716 /* DummyFileForNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFileForNoticeView.swift; sourceTree = "<group>"; };
-		580A015D2B9840E200DF1716 /* HotNotices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNotices.swift; sourceTree = "<group>"; };
+		580A015A2B983C5B00DF1716 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		580A015D2B9840E200DF1716 /* HotNoticeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeContent.swift; sourceTree = "<group>"; };
 		580A015F2B98428B00DF1716 /* BottomTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabbarViewModel.swift; sourceTree = "<group>"; };
 		580A01612B98433C00DF1716 /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		581593822B9040460007DF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -61,13 +63,14 @@
 		585DE3182B95DBA800B38F57 /* NaviItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviItem.swift; sourceTree = "<group>"; };
 		585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeBoard.swift; sourceTree = "<group>"; };
 		585DE3212B95E8E300B38F57 /* EggStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggStatus.swift; sourceTree = "<group>"; };
-		585DE3252B95FDC200B38F57 /* NoticeComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeComponents.swift; sourceTree = "<group>"; };
+		585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewForNearShop.swift; sourceTree = "<group>"; };
 		5890E1712B8C7DF0008CC7D6 /* Fishome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishomeApp.swift; sourceTree = "<group>"; };
 		5890E1762B8C7DF0008CC7D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5890E1782B8C7DF1008CC7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5890E17B2B8C7DF1008CC7D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5890E1872B8DC47B008CC7D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		58B7AD682B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockForRecentlyShopNotice.swift; sourceTree = "<group>"; };
 		58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		58C5CF562B8EF6A900558C37 /* GeneralTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTF.swift; sourceTree = "<group>"; };
 		58C5CF582B8EFE0300558C37 /* SecureTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTF.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 				581593992B90416D0007DF46 /* KakaoSDKTemplate in Frameworks */,
 				581593932B90416D0007DF46 /* KakaoSDKNavi in Frameworks */,
 				581593852B90416D0007DF46 /* KakaoSDK in Frameworks */,
+				58B7AD772B99EAA100A0CBF9 /* KakaoMapsSDK_SPM in Frameworks */,
 				5815938D2B90416D0007DF46 /* KakaoSDKCommon in Frameworks */,
 				581593872B90416D0007DF46 /* KakaoSDKAuth in Frameworks */,
 				581593A42B905DFB0007DF46 /* GoogleSignInSwift in Frameworks */,
@@ -103,46 +107,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		580A015C2B9840BC00DF1716 /* HotNoticeBoard */ = {
-			isa = PBXGroup;
-			children = (
-				585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */,
-				580A015D2B9840E200DF1716 /* HotNotices.swift */,
-			);
-			path = HotNoticeBoard;
-			sourceTree = "<group>";
-		};
 		585DE3102B95D3C300B38F57 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				585DE31C2B95E4D800B38F57 /* ViewModel */,
-				585DE3132B95D47C00B38F57 /* MainComponents */,
+				58B7AD6A2B99E17F00A0CBF9 /* HomeTab */,
+				58B7AD702B99E24400A0CBF9 /* BottomTabbar */,
+				58B7AD6F2B99E23D00A0CBF9 /* ProfileTab */,
+				58B7AD6E2B99E23600A0CBF9 /* MessageTab */,
+				58B7AD6D2B99E23000A0CBF9 /* ShopTab */,
+				58B7AD6C2B99E22700A0CBF9 /* NoticeTab */,
 				585DE3112B95D3EC00B38F57 /* MainView.swift */,
-				58F82E5E2B9739EB0089E8BE /* HomeView.swift */,
-				580A01612B98433C00DF1716 /* NoticeView.swift */,
+				585DE3182B95DBA800B38F57 /* NaviItem.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		585DE3132B95D47C00B38F57 /* MainComponents */ = {
-			isa = PBXGroup;
-			children = (
-				580A015C2B9840BC00DF1716 /* HotNoticeBoard */,
-				585DE3142B95D49400B38F57 /* BottomTabView.swift */,
-				585DE3162B95D71600B38F57 /* TabbarItem.swift */,
-				585DE3182B95DBA800B38F57 /* NaviItem.swift */,
-				585DE3212B95E8E300B38F57 /* EggStatus.swift */,
-				585DE3252B95FDC200B38F57 /* NoticeComponents.swift */,
-			);
-			path = MainComponents;
-			sourceTree = "<group>";
-		};
-		585DE31C2B95E4D800B38F57 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				580A015F2B98428B00DF1716 /* BottomTabbarViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5890E1682B8C7DF0008CC7D6 = {
@@ -150,6 +127,7 @@
 			children = (
 				5890E1732B8C7DF0008CC7D6 /* Fishome */,
 				5890E1722B8C7DF0008CC7D6 /* Products */,
+				58B7AD7A2B99F4D900A0CBF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +144,7 @@
 			children = (
 				5857E8072B9382A90051BD36 /* Fishome.entitlements */,
 				581593822B9040460007DF46 /* Info.plist */,
+				58B7AD732B99E2BF00A0CBF9 /* Model */,
 				5890E1852B8DC459008CC7D6 /* View */,
 				5890E1832B8DC40F008CC7D6 /* Assets */,
 				5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */,
@@ -174,7 +153,6 @@
 				5890E17A2B8C7DF1008CC7D6 /* Preview Content */,
 				58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */,
 				5815939C2B90420E0007DF46 /* Config.xcconfig */,
-				580A015A2B983C5B00DF1716 /* DummyFileForNoticeView.swift */,
 			);
 			path = Fishome;
 			sourceTree = "<group>";
@@ -225,6 +203,97 @@
 			path = LoginComponents;
 			sourceTree = "<group>";
 		};
+		58B7AD6A2B99E17F00A0CBF9 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				58B7AD6B2B99E1A100A0CBF9 /* HomeTabComponents */,
+				58F82E5E2B9739EB0089E8BE /* HomeView.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		58B7AD6B2B99E1A100A0CBF9 /* HomeTabComponents */ = {
+			isa = PBXGroup;
+			children = (
+				58B7AD682B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift */,
+				585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */,
+				585DE3212B95E8E300B38F57 /* EggStatus.swift */,
+				585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */,
+				580A015D2B9840E200DF1716 /* HotNoticeContent.swift */,
+			);
+			path = HomeTabComponents;
+			sourceTree = "<group>";
+		};
+		58B7AD6C2B99E22700A0CBF9 /* NoticeTab */ = {
+			isa = PBXGroup;
+			children = (
+				580A01612B98433C00DF1716 /* NoticeView.swift */,
+			);
+			path = NoticeTab;
+			sourceTree = "<group>";
+		};
+		58B7AD6D2B99E23000A0CBF9 /* ShopTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShopTab;
+			sourceTree = "<group>";
+		};
+		58B7AD6E2B99E23600A0CBF9 /* MessageTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageTab;
+			sourceTree = "<group>";
+		};
+		58B7AD6F2B99E23D00A0CBF9 /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
+		58B7AD702B99E24400A0CBF9 /* BottomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				58B7AD712B99E25F00A0CBF9 /* ViewModel */,
+				585DE3142B95D49400B38F57 /* BottomTabView.swift */,
+				585DE3162B95D71600B38F57 /* TabbarItem.swift */,
+			);
+			path = BottomTabbar;
+			sourceTree = "<group>";
+		};
+		58B7AD712B99E25F00A0CBF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				580A015F2B98428B00DF1716 /* BottomTabbarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58B7AD732B99E2BF00A0CBF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58B7AD742B99E2CE00A0CBF9 /* Notice */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58B7AD742B99E2CE00A0CBF9 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				580A015A2B983C5B00DF1716 /* NoticeModel.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		58B7AD7A2B99F4D900A0CBF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58C5CF4D2B8EEEFC00558C37 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +333,7 @@
 				5815939A2B90416D0007DF46 /* KakaoSDKUser */,
 				581593A12B905DFB0007DF46 /* GoogleSignIn */,
 				581593A32B905DFB0007DF46 /* GoogleSignInSwift */,
+				58B7AD762B99EAA100A0CBF9 /* KakaoMapsSDK_SPM */,
 			);
 			productName = Fishome;
 			productReference = 5890E1712B8C7DF0008CC7D6 /* Fishome.app */;
@@ -296,6 +366,7 @@
 			packageReferences = (
 				581593832B90416D0007DF46 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				58B7AD752B99EAA100A0CBF9 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
 			);
 			productRefGroup = 5890E1722B8C7DF0008CC7D6 /* Products */;
 			projectDirPath = "";
@@ -329,10 +400,11 @@
 				585DE3152B95D49400B38F57 /* BottomTabView.swift in Sources */,
 				5890E1882B8DC47B008CC7D6 /* LoginView.swift in Sources */,
 				585DE3192B95DBA800B38F57 /* NaviItem.swift in Sources */,
-				585DE3262B95FDC200B38F57 /* NoticeComponents.swift in Sources */,
+				585DE3262B95FDC200B38F57 /* mapViewForNearShop.swift in Sources */,
 				585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */,
-				580A015B2B983C5B00DF1716 /* DummyFileForNoticeView.swift in Sources */,
+				580A015B2B983C5B00DF1716 /* NoticeModel.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
+				58B7AD692B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift in Sources */,
 				580A01602B98428B00DF1716 /* BottomTabbarViewModel.swift in Sources */,
 				580A01622B98433C00DF1716 /* NoticeView.swift in Sources */,
 				585DE3202B95E89900B38F57 /* HotNoticeBoard.swift in Sources */,
@@ -340,7 +412,7 @@
 				585DE3222B95E8E300B38F57 /* EggStatus.swift in Sources */,
 				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,
 				58F82E5F2B9739EB0089E8BE /* HomeView.swift in Sources */,
-				580A015E2B9840E200DF1716 /* HotNotices.swift in Sources */,
+				580A015E2B9840E200DF1716 /* HotNoticeContent.swift in Sources */,
 				58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */,
 				5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */,
 				58C5CF5F2B8F687C00558C37 /* SignUpView.swift in Sources */,
@@ -477,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_ENTITLEMENTS = Fishome/Fishome.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -485,8 +558,13 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P95R3MRRWK;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fishome/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자 위치 권한ㅁ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -502,6 +580,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SpaceTalk_12ProMax;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/joseongbin/Desktop/iOS/Fishome/Fishome/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,6 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_ENTITLEMENTS = Fishome/Fishome.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -520,8 +600,13 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P95R3MRRWK;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fishome/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자 위치 권한ㅁ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +622,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SpaceTalk_12ProMax;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/joseongbin/Desktop/iOS/Fishome/Fishome/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -580,6 +666,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 7.0.0;
+			};
+		};
+		58B7AD752B99EAA100A0CBF9 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -654,6 +748,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 581593A02B905DFB0007DF46 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		58B7AD762B99EAA100A0CBF9 /* KakaoMapsSDK_SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B7AD752B99EAA100A0CBF9 /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = KakaoMapsSDK_SPM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
