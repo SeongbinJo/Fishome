@@ -25,7 +25,7 @@ struct HomeView: View {
                         .padding(.leading, geometry.size.width * 0.05)
                     TabView {
                         ForEach(noticeName, id: \.self) { name in
-                            HotNoticeBoard(noticeName: name, recWidth: geometry.size.width * 0.9, recHeight: geometry.size.height * 0.3, titleRecWidth: geometry.size.width * 0.2, titleRecHeight: geometry.size.height * 0.05, noticeWidth: geometry.size.width * 0.8, noticeHeight: geometry.size.height * 0.2)
+                            HomeHotNoticeBoard(noticeName: name, recWidth: geometry.size.width * 0.9, recHeight: geometry.size.height * 0.3, titleRecWidth: geometry.size.width * 0.2, titleRecHeight: geometry.size.height * 0.05, noticeWidth: geometry.size.width * 0.8, noticeHeight: geometry.size.height * 0.2)
                         }
                     }
                     .tabViewStyle(.page)

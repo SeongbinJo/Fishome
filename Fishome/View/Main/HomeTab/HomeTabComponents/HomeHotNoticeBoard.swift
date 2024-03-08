@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct HotNoticeBoard: View {
+struct HomeHotNoticeBoard: View {
     
     var noticeName: String
     

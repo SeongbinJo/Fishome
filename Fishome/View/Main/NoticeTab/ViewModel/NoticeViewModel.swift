@@ -21,8 +21,8 @@ class NoticeViewModel: ObservableObject {
         switch value {
         case "인기 게시판":
             return AnyView(HotNoticeView(naviPathNoticeView: naviPath))
-//        case "자유 게시판":
-//            return AnyView(FreeBoardView(naviPathNoticeView: naviPath))
+        case "자유 게시판":
+            return AnyView(FreeBoardView())
         default:
             print("뭔가 이상하다..(NoticeViewModel)")
             return AnyView(Text("Error: NoticeViewModel - naviToNotice."))

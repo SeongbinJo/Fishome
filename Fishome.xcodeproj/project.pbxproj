@@ -30,11 +30,13 @@
 		582D189D2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189C2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift */; };
 		582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189E2B9B35B200158F92 /* HotNoticeView.swift */; };
 		582D18A22B9B381C00158F92 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A12B9B381C00158F92 /* NoticeViewModel.swift */; };
+		582D18A42B9B667500158F92 /* FreeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A32B9B667500158F92 /* FreeBoardView.swift */; };
+		582D18A72B9B672D00158F92 /* HotNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */; };
 		585DE3122B95D3EC00B38F57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3112B95D3EC00B38F57 /* MainView.swift */; };
 		585DE3152B95D49400B38F57 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3142B95D49400B38F57 /* BottomTabView.swift */; };
 		585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3162B95D71600B38F57 /* TabbarItem.swift */; };
 		585DE3192B95DBA800B38F57 /* NaviItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3182B95DBA800B38F57 /* NaviItem.swift */; };
-		585DE3202B95E89900B38F57 /* HotNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */; };
+		585DE3202B95E89900B38F57 /* HomeHotNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE31F2B95E89900B38F57 /* HomeHotNoticeBoard.swift */; };
 		585DE3222B95E8E300B38F57 /* EggStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3212B95E8E300B38F57 /* EggStatus.swift */; };
 		585DE3262B95FDC200B38F57 /* mapViewForNearShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */; };
 		5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5890E1742B8C7DF0008CC7D6 /* FishomeApp.swift */; };
@@ -66,12 +68,14 @@
 		582D189C2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleAndCarpDetailNoticeBlock.swift; sourceTree = "<group>"; };
 		582D189E2B9B35B200158F92 /* HotNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeView.swift; sourceTree = "<group>"; };
 		582D18A12B9B381C00158F92 /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
+		582D18A32B9B667500158F92 /* FreeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardView.swift; sourceTree = "<group>"; };
+		582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeBoard.swift; sourceTree = "<group>"; };
 		5857E8072B9382A90051BD36 /* Fishome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishome.entitlements; sourceTree = "<group>"; };
 		585DE3112B95D3EC00B38F57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		585DE3142B95D49400B38F57 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		585DE3162B95D71600B38F57 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
 		585DE3182B95DBA800B38F57 /* NaviItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviItem.swift; sourceTree = "<group>"; };
-		585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeBoard.swift; sourceTree = "<group>"; };
+		585DE31F2B95E89900B38F57 /* HomeHotNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHotNoticeBoard.swift; sourceTree = "<group>"; };
 		585DE3212B95E8E300B38F57 /* EggStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggStatus.swift; sourceTree = "<group>"; };
 		585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewForNearShop.swift; sourceTree = "<group>"; };
 		5890E1712B8C7DF0008CC7D6 /* Fishome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,14 @@
 				582D18A12B9B381C00158F92 /* NoticeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		582D18A52B9B66D700158F92 /* HotNoticeViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */,
+			);
+			path = HotNoticeViewComponents;
 			sourceTree = "<group>";
 		};
 		585DE3102B95D3C300B38F57 /* Main */ = {
@@ -246,7 +258,7 @@
 				58B7AD682B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift */,
 				585DE3252B95FDC200B38F57 /* mapViewForNearShop.swift */,
 				585DE3212B95E8E300B38F57 /* EggStatus.swift */,
-				585DE31F2B95E89900B38F57 /* HotNoticeBoard.swift */,
+				585DE31F2B95E89900B38F57 /* HomeHotNoticeBoard.swift */,
 				580A015D2B9840E200DF1716 /* HotNoticeContent.swift */,
 			);
 			path = HomeTabComponents;
@@ -255,10 +267,12 @@
 		58B7AD6C2B99E22700A0CBF9 /* NoticeTab */ = {
 			isa = PBXGroup;
 			children = (
+				582D18A52B9B66D700158F92 /* HotNoticeViewComponents */,
 				582D18A02B9B380F00158F92 /* ViewModel */,
 				582D18972B9AC4D400158F92 /* NoticeTabComponents */,
 				580A01612B98433C00DF1716 /* NoticeView.swift */,
 				582D189E2B9B35B200158F92 /* HotNoticeView.swift */,
+				582D18A32B9B667500158F92 /* FreeBoardView.swift */,
 			);
 			path = NoticeTab;
 			sourceTree = "<group>";
@@ -435,13 +449,15 @@
 				585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */,
 				580A015B2B983C5B00DF1716 /* NoticeModel.swift in Sources */,
 				582D18992B9AC50100158F92 /* NoticeBlock.swift in Sources */,
+				582D18A72B9B672D00158F92 /* HotNoticeBoard.swift in Sources */,
+				582D18A42B9B667500158F92 /* FreeBoardView.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
 				58B7AD692B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift in Sources */,
 				582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */,
 				582D189B2B9AE39500158F92 /* NoticeWhaleAndCarp.swift in Sources */,
 				580A01602B98428B00DF1716 /* BottomTabbarViewModel.swift in Sources */,
 				580A01622B98433C00DF1716 /* NoticeView.swift in Sources */,
-				585DE3202B95E89900B38F57 /* HotNoticeBoard.swift in Sources */,
+				585DE3202B95E89900B38F57 /* HomeHotNoticeBoard.swift in Sources */,
 				5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */,
 				582D18A22B9B381C00158F92 /* NoticeViewModel.swift in Sources */,
 				585DE3222B95E8E300B38F57 /* EggStatus.swift in Sources */,

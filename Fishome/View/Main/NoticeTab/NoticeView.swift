@@ -10,6 +10,8 @@ import SwiftUI
 
 struct NoticeView: View {
     
+    
+    
     //인기 게시글, 자유게시판 등 각 종 게시판 이동 시 사용할 Path(NavigationStack)
     @State var naviPathNoticeView: NavigationPath = NavigationPath()
     

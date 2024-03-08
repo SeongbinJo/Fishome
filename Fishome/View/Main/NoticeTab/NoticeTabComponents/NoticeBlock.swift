@@ -9,9 +9,8 @@ import Foundation
 import SwiftUI
 
 struct NoticeBlock: View {
-    
     @StateObject var noticeVM: NoticeViewModel = NoticeViewModel()
-//    
+
     @Binding var naviPathNoticeView: NavigationPath
     
     var recWidth: CGFloat
@@ -23,7 +22,7 @@ struct NoticeBlock: View {
     var imageWidth: CGFloat
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $naviPathNoticeView) {
             Button(action: {
                 print("게시판 - \(blockTitle) 눌림.")
                 naviPathNoticeView.append(blockTitle)
@@ -44,14 +43,8 @@ struct NoticeBlock: View {
                     }
                 }
             }
-            .navigationDestination(for: String.self) { notice in
-//                noticeVM.naviToNotice(value: notice, naviPath: $naviPathNoticeView)
-                switch notice {
-                case "인기 게시판":
-                    HotNoticeView(naviPathNoticeView: $naviPathNoticeView)
-                default:
-                    Text("하... 제발 좀")
-                }
+            .navigationDestination(for: String.self) { value in
+                noticeVM.naviToNotice(value: value, naviPath: $naviPathNoticeView)
             }
         }
     }

@@ -13,7 +13,7 @@ struct MainView: View {
     
     @EnvironmentObject var BottomTabbarVM: BottomTabbarViewModel
     
-    @State var pageStatus: String = "게시판"
+    @State var pageStatus: String = "홈"
     
     var body: some View {
         GeometryReader { geometry in
