@@ -25,6 +25,11 @@
 		5815939B2B90416D0007DF46 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 5815939A2B90416D0007DF46 /* KakaoSDKUser */; };
 		581593A22B905DFB0007DF46 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A12B905DFB0007DF46 /* GoogleSignIn */; };
 		581593A42B905DFB0007DF46 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581593A32B905DFB0007DF46 /* GoogleSignInSwift */; };
+		582D18992B9AC50100158F92 /* NoticeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18982B9AC50100158F92 /* NoticeBlock.swift */; };
+		582D189B2B9AE39500158F92 /* NoticeWhaleAndCarp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189A2B9AE39500158F92 /* NoticeWhaleAndCarp.swift */; };
+		582D189D2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189C2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift */; };
+		582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189E2B9B35B200158F92 /* HotNoticeView.swift */; };
+		582D18A22B9B381C00158F92 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A12B9B381C00158F92 /* NoticeViewModel.swift */; };
 		585DE3122B95D3EC00B38F57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3112B95D3EC00B38F57 /* MainView.swift */; };
 		585DE3152B95D49400B38F57 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3142B95D49400B38F57 /* BottomTabView.swift */; };
 		585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3162B95D71600B38F57 /* TabbarItem.swift */; };
@@ -56,6 +61,11 @@
 		580A01612B98433C00DF1716 /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		581593822B9040460007DF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5815939C2B90420E0007DF46 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		582D18982B9AC50100158F92 /* NoticeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBlock.swift; sourceTree = "<group>"; };
+		582D189A2B9AE39500158F92 /* NoticeWhaleAndCarp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeWhaleAndCarp.swift; sourceTree = "<group>"; };
+		582D189C2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleAndCarpDetailNoticeBlock.swift; sourceTree = "<group>"; };
+		582D189E2B9B35B200158F92 /* HotNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeView.swift; sourceTree = "<group>"; };
+		582D18A12B9B381C00158F92 /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		5857E8072B9382A90051BD36 /* Fishome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishome.entitlements; sourceTree = "<group>"; };
 		585DE3112B95D3EC00B38F57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		585DE3142B95D49400B38F57 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
@@ -107,6 +117,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582D18972B9AC4D400158F92 /* NoticeTabComponents */ = {
+			isa = PBXGroup;
+			children = (
+				582D18982B9AC50100158F92 /* NoticeBlock.swift */,
+				582D189A2B9AE39500158F92 /* NoticeWhaleAndCarp.swift */,
+				582D189C2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift */,
+			);
+			path = NoticeTabComponents;
+			sourceTree = "<group>";
+		};
+		582D18A02B9B380F00158F92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				582D18A12B9B381C00158F92 /* NoticeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		585DE3102B95D3C300B38F57 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +255,10 @@
 		58B7AD6C2B99E22700A0CBF9 /* NoticeTab */ = {
 			isa = PBXGroup;
 			children = (
+				582D18A02B9B380F00158F92 /* ViewModel */,
+				582D18972B9AC4D400158F92 /* NoticeTabComponents */,
 				580A01612B98433C00DF1716 /* NoticeView.swift */,
+				582D189E2B9B35B200158F92 /* HotNoticeView.swift */,
 			);
 			path = NoticeTab;
 			sourceTree = "<group>";
@@ -403,17 +434,22 @@
 				585DE3262B95FDC200B38F57 /* mapViewForNearShop.swift in Sources */,
 				585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */,
 				580A015B2B983C5B00DF1716 /* NoticeModel.swift in Sources */,
+				582D18992B9AC50100158F92 /* NoticeBlock.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
 				58B7AD692B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift in Sources */,
+				582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */,
+				582D189B2B9AE39500158F92 /* NoticeWhaleAndCarp.swift in Sources */,
 				580A01602B98428B00DF1716 /* BottomTabbarViewModel.swift in Sources */,
 				580A01622B98433C00DF1716 /* NoticeView.swift in Sources */,
 				585DE3202B95E89900B38F57 /* HotNoticeBoard.swift in Sources */,
 				5890E1772B8C7DF0008CC7D6 /* ContentView.swift in Sources */,
+				582D18A22B9B381C00158F92 /* NoticeViewModel.swift in Sources */,
 				585DE3222B95E8E300B38F57 /* EggStatus.swift in Sources */,
 				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,
 				58F82E5F2B9739EB0089E8BE /* HomeView.swift in Sources */,
 				580A015E2B9840E200DF1716 /* HotNoticeContent.swift in Sources */,
 				58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */,
+				582D189D2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift in Sources */,
 				5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */,
 				58C5CF5F2B8F687C00558C37 /* SignUpView.swift in Sources */,
 				58C5CF5D2B8F034A00558C37 /* SocialLoginBtn.swift in Sources */,

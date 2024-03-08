@@ -28,7 +28,7 @@ struct HotNoticeModel: Identifiable, Codable {
             }
 }
 
-//홈 탭 - 장터 최신 게시글 모델[테스트]
+//홈 탭 - 장터 최신 게시글 모델 [테스트]
 struct RecentlyShopModel: Identifiable, Codable {
     var id: String
     var category: String
@@ -47,6 +47,13 @@ struct RecentlyShopModel: Identifiable, Codable {
                 dateFormatter.dateFormat = "yy/MM/dd HH:MM"
                 return dateFormatter.string(from: date)
             }
+}
+
+//게시판 탭 - 해수어/열대어 별 게시판 종류 출력을 위한 모델 [테스트]
+struct typeOfNotice: Identifiable, Codable {
+    var id: String
+    var firstCategory: String
+    var noticeTitle: String
 }
 
 //모든 게시글(장터 제외) 모델 - greateCount로 좋아요 TOP 게시글 선정

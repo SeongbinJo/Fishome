@@ -13,5 +13,6 @@ struct ContentView: View {
 //            .environmentObject(LoginViewModel())
         MainView()
             .environmentObject(BottomTabbarViewModel())
+            .environmentObject(NoticeViewModel())
     }
 }

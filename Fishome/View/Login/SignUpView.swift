@@ -14,7 +14,7 @@ struct SignUpView: View {
     
     @EnvironmentObject var loginViewModel: LoginViewModel
     
-    @Binding var navigationPath : NavigationPath
+    @Binding var naviPathLoginSignUp : NavigationPath
     
     var body: some View {
         GeometryReader { geometry in
@@ -39,7 +39,7 @@ struct SignUpView: View {
                 .navigationBarItems(leading: Button(
                     action: {
                         print("SignUp View Back Button Clicked.")
-                        navigationPath.removeLast()
+                        naviPathLoginSignUp.removeLast()
                         print(geometry.size.height)
                     }){
                         HStack {

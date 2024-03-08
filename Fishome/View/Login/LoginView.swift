@@ -15,11 +15,11 @@ struct LoginView : View {
     
     @State var loginToSignUpView: Bool = false
     
-    @State var navigationPath = NavigationPath()
+    @State var naviPathLoginSignUp: NavigationPath = NavigationPath()
     
     var body: some View {
         GeometryReader { geometry in
-            NavigationStack(path: $navigationPath) {
+            NavigationStack(path: $naviPathLoginSignUp) {
                 VStack {
                     //삐숌 로고 이미지
                     Image("Fishome_Logo_colored")
@@ -36,7 +36,7 @@ struct LoginView : View {
                         GeneralBtn(buttonText: "로그인", strokeColor: UIColor(red: 108/255, green: 160/255, blue: 227/255, alpha: 1))
                         Button(action : {
                             print("회원가입 버튼 클릭.")
-                            navigationPath.append("SignUp")
+                            naviPathLoginSignUp.append("SignUp")
 //                            kakaoVM.kakaoLogout()
 //                            googleVM.googleLogout()
                         }){
@@ -45,12 +45,8 @@ struct LoginView : View {
                         }
                         .padding(.trailing, 10)
                         .navigationDestination(for: String.self) { value in
-                            switch value {
-                            case "SignUp":
-                                SignUpView(navigationPath: $navigationPath)
-                            default:
-                                LoginView()
-                            }}
+                            loginVM.naviToSignUp(value: value, naviPath: $naviPathLoginSignUp)
+                        }
                     }
                     .frame(width: geometry.size.width * 0.75, height: geometry.size.height * 0.27)
                     .padding(.bottom, geometry.size.height * 0.02)

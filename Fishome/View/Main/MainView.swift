@@ -13,7 +13,7 @@ struct MainView: View {
     
     @EnvironmentObject var BottomTabbarVM: BottomTabbarViewModel
     
-    @State var pageStatus: String = "홈"
+    @State var pageStatus: String = "게시판"
     
     var body: some View {
         GeometryReader { geometry in
@@ -30,6 +30,7 @@ struct MainView: View {
                         NaviTrailingItem()
                     }
                 }
+                .toolbarBackground(.automatic)
             }
         }
     }

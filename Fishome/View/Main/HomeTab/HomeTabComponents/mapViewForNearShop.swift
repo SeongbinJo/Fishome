@@ -26,8 +26,6 @@ struct mapViewForNearShop: View {
                 .opacity(0.6)
                 .shadow(radius: 5, x: 0, y: 5)
                 .overlay {
-                    //카카오맵 - 애플 실리콘 맥 환경에서는 시뮬에서 작동하지 않음. 오직 실제기기에서만 가능.
-//                    KakaoMapVCWrapper()
                     //애플 맵
                     Map()
                         .cornerRadius(20)

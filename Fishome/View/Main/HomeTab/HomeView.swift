@@ -60,12 +60,12 @@ struct HomeView: View {
                 //근처 수족관 지도
                 VStack(alignment: .leading, spacing: 4) {
                     Text("내 주변 수족관")
-                    NoticeComponents(recWidth: geometry.size.width * 0.9, recHeight: geometry.size.height * 0.6)
+                    mapViewForNearShop(recWidth: geometry.size.width * 0.9, recHeight: geometry.size.height * 0.6)
                         .padding(.bottom, geometry.size.height * 0.1)
                 }
             }
             .frame(width: geometry.size.width)
-            .background(Color.yellow)
+            .background(.yellow)
         }
     }
 }

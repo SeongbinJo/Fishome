@@ -11,8 +11,22 @@ import KakaoSDKUser
 import GoogleSignIn
 import GoogleSignInSwift
 import AuthenticationServices
+import SwiftUI
 
 class LoginViewModel: ObservableObject {
+    
+    //회원가입 버튼 액션#############################################
+    func naviToSignUp(value: String, naviPath: Binding<NavigationPath>) -> some View {
+        switch value {
+        case "SignUp":
+            print("회원가입 페이지로 이동합니다.(LoginViewModel)")
+            return AnyView(SignUpView(naviPathLoginSignUp: naviPath))
+        default:
+            print("뭔가 이상하다.(LoginViewModel)")
+            return AnyView(Text("Error: LoginViewModel - naviToSignUp."))
+        }
+    }
+    //회원가입 버튼 액션#############################################
     
     //소셜 별 로그인 액션############################################
     @MainActor func actionBySocialLogin(status: String) {
