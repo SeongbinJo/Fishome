@@ -31,7 +31,7 @@
 		582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D189E2B9B35B200158F92 /* HotNoticeView.swift */; };
 		582D18A22B9B381C00158F92 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A12B9B381C00158F92 /* NoticeViewModel.swift */; };
 		582D18A42B9B667500158F92 /* FreeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A32B9B667500158F92 /* FreeBoardView.swift */; };
-		582D18A72B9B672D00158F92 /* HotNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */; };
+		582D18A72B9B672D00158F92 /* HotNoticeDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582D18A62B9B672D00158F92 /* HotNoticeDropDownView.swift */; };
 		585DE3122B95D3EC00B38F57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3112B95D3EC00B38F57 /* MainView.swift */; };
 		585DE3152B95D49400B38F57 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3142B95D49400B38F57 /* BottomTabView.swift */; };
 		585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585DE3162B95D71600B38F57 /* TabbarItem.swift */; };
@@ -53,6 +53,8 @@
 		58C5CF5D2B8F034A00558C37 /* SocialLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF5C2B8F034A00558C37 /* SocialLoginBtn.swift */; };
 		58C5CF5F2B8F687C00558C37 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF5E2B8F687C00558C37 /* SignUpView.swift */; };
 		58C5CF612B8F8C5600558C37 /* KeyboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */; };
+		58EF1E682B9C14F4006127F9 /* FreeNoticeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF1E672B9C14F4006127F9 /* FreeNoticeBoard.swift */; };
+		58EF1E6C2B9C5AD2006127F9 /* HotNoticeContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF1E6B2B9C5AD2006127F9 /* HotNoticeContentsView.swift */; };
 		58F82E5F2B9739EB0089E8BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F82E5E2B9739EB0089E8BE /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +71,7 @@
 		582D189E2B9B35B200158F92 /* HotNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeView.swift; sourceTree = "<group>"; };
 		582D18A12B9B381C00158F92 /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		582D18A32B9B667500158F92 /* FreeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBoardView.swift; sourceTree = "<group>"; };
-		582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeBoard.swift; sourceTree = "<group>"; };
+		582D18A62B9B672D00158F92 /* HotNoticeDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeDropDownView.swift; sourceTree = "<group>"; };
 		5857E8072B9382A90051BD36 /* Fishome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishome.entitlements; sourceTree = "<group>"; };
 		585DE3112B95D3EC00B38F57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		585DE3142B95D49400B38F57 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,8 @@
 		58C5CF5C2B8F034A00558C37 /* SocialLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginBtn.swift; sourceTree = "<group>"; };
 		58C5CF5E2B8F687C00558C37 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		58C5CF602B8F8C5600558C37 /* KeyboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMonitor.swift; sourceTree = "<group>"; };
+		58EF1E672B9C14F4006127F9 /* FreeNoticeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNoticeBoard.swift; sourceTree = "<group>"; };
+		58EF1E6B2B9C5AD2006127F9 /* HotNoticeContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNoticeContentsView.swift; sourceTree = "<group>"; };
 		58F82E5E2B9739EB0089E8BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +146,8 @@
 		582D18A52B9B66D700158F92 /* HotNoticeViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				582D18A62B9B672D00158F92 /* HotNoticeBoard.swift */,
+				582D18A62B9B672D00158F92 /* HotNoticeDropDownView.swift */,
+				58EF1E6B2B9C5AD2006127F9 /* HotNoticeContentsView.swift */,
 			);
 			path = HotNoticeViewComponents;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 		58B7AD6C2B99E22700A0CBF9 /* NoticeTab */ = {
 			isa = PBXGroup;
 			children = (
+				58EF1E662B9C14D7006127F9 /* FreeNoticeComponents */,
 				582D18A52B9B66D700158F92 /* HotNoticeViewComponents */,
 				582D18A02B9B380F00158F92 /* ViewModel */,
 				582D18972B9AC4D400158F92 /* NoticeTabComponents */,
@@ -345,6 +351,14 @@
 				58C5CF4E2B8EEF1600558C37 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58EF1E662B9C14D7006127F9 /* FreeNoticeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				58EF1E672B9C14F4006127F9 /* FreeNoticeBoard.swift */,
+			);
+			path = FreeNoticeComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,8 +463,9 @@
 				585DE3172B95D71600B38F57 /* TabbarItem.swift in Sources */,
 				580A015B2B983C5B00DF1716 /* NoticeModel.swift in Sources */,
 				582D18992B9AC50100158F92 /* NoticeBlock.swift in Sources */,
-				582D18A72B9B672D00158F92 /* HotNoticeBoard.swift in Sources */,
+				582D18A72B9B672D00158F92 /* HotNoticeDropDownView.swift in Sources */,
 				582D18A42B9B667500158F92 /* FreeBoardView.swift in Sources */,
+				58EF1E6C2B9C5AD2006127F9 /* HotNoticeContentsView.swift in Sources */,
 				58C5CF5B2B8EFF9C00558C37 /* GeneralBtn.swift in Sources */,
 				58B7AD692B99A73200A0CBF9 /* BlockForRecentlyShopNotice.swift in Sources */,
 				582D189F2B9B35B200158F92 /* HotNoticeView.swift in Sources */,
@@ -464,6 +479,7 @@
 				58C5CF572B8EF6A900558C37 /* GeneralTF.swift in Sources */,
 				58F82E5F2B9739EB0089E8BE /* HomeView.swift in Sources */,
 				580A015E2B9840E200DF1716 /* HotNoticeContent.swift in Sources */,
+				58EF1E682B9C14F4006127F9 /* FreeNoticeBoard.swift in Sources */,
 				58C5CF592B8EFE0300558C37 /* SecureTF.swift in Sources */,
 				582D189D2B9AF58800158F92 /* WhaleAndCarpDetailNoticeBlock.swift in Sources */,
 				5890E1752B8C7DF0008CC7D6 /* FishomeApp.swift in Sources */,

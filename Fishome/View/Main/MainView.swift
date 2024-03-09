@@ -20,6 +20,7 @@ struct MainView: View {
             NavigationStack {
                 ZStack {
                     BottomTabbarVM.viewByTabbarStatus(status: pageStatus)
+                        .environmentObject(NoticeViewModel())
                     BottomTabView(pageStatus: $pageStatus) // 이 부분은 BottomTabView의 구현에 따라 다릅니다.
                 }
                 .toolbar {

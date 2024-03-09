@@ -18,39 +18,71 @@ struct HotNoticeView: View {
     
     @Binding var naviPathNoticeView: NavigationPath
     
-    var nameOfHotNoticeBoard: [hotboardModel] = [
-        hotboardModel(id: UUID().uuidString, noticeName: "자유", noticeImage: "Fishome_FreeBoardIcon"),
-        hotboardModel(id: UUID().uuidString, noticeName: "해수어", noticeImage: "Fishome_Whale"),
-        hotboardModel(id: UUID().uuidString, noticeName: "열대어", noticeImage: "Fishome_Carp")
-    ]
+    @State var HotNoticeStatus = "자유"
+    
     
     var body: some View {
         GeometryReader { geometry in
-            TabView {
-                ForEach(nameOfHotNoticeBoard, id: \.id) { value in
-                    ZStack(alignment: .topLeading) {
-                        HotNoticeBoard(noticeName: value.noticeName, imageName: value.noticeImage, recWidth: geometry.size.width * 0.9, recHeight: geometry.size.height)
-                            .padding(.vertical, 5)
-                        Button(action: {
-                            print("게시판 탭으로 이동합니다.(인기 게시판 - 뒤로가기)")
-                            naviPathNoticeView.removeLast()
-                        }) {
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: geometry.size.width * 0.2, height: geometry.size.height * 0.05)
-                                    .foregroundColor(.white)
-                                    .opacity(0.6)
-                                    .cornerRadius(20)
-                                Text("뒤로가기")
+                    ScrollView {
+                        ZStack(alignment: .topLeading) {
+                                //인기 게시판 종류 드롭 메뉴 버튼
+                                HotNoticeDropDownView(HotNoticeStatus: $HotNoticeStatus, recWidth: geometry.size.width * 0.9, recheight: geometry.size.height * 0.055, imageWidth: geometry.size.width * 0.1)
+                                //뒤로가기 버튼
+                                Button(action: {
+                                    print("게시판 탭으로 이동합니다.(인기 게시판 - 뒤로가기)")
+                                    naviPathNoticeView.removeLast()
+                                }) {
+                                    ZStack {
+                                        Rectangle()
+                                            .frame(width: geometry.size.width * 0.22, height: geometry.size.height * 0.055)
+                                            .foregroundColor(.white)
+                                            .opacity(0.6)
+                                            .cornerRadius(20)
+                                        Text("뒤로가기")
+                                    }
+                                    .background(.blue)
+                                }
                             }
-                            .padding()
-                        }
+                        //인기 게시판 게시글
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
+                        HotNoticeContentsView(recWidth: geometry.size.width * 0.9)
+                            .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.2)
+                            .padding(.vertical)
+                            .background(.red)
+                        Rectangle()
+                            .frame(width: geometry.size.width * 0.9, height: 1)
                     }
-                }
-            }
-            .tabViewStyle(.page)
             .frame(width: geometry.size.width, height: geometry.size.height)
-                
+            .background(.yellow)
                 .navigationBarBackButtonHidden()
                 .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -62,6 +94,6 @@ struct HotNoticeView: View {
             }
             .toolbarBackground(.automatic)
         }
-        .background(.yellow)
+
     }
 }

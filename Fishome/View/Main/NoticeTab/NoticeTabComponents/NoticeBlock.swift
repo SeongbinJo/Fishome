@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 struct NoticeBlock: View {
-    @StateObject var noticeVM: NoticeViewModel = NoticeViewModel()
+    
+    @EnvironmentObject var noticeVM: NoticeViewModel
 
     @Binding var naviPathNoticeView: NavigationPath
     
