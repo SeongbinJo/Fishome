@@ -14,9 +14,6 @@ struct FreeBoardView: View {
     
     @State var HotNoticeStatus = "자유"
     
-    //인기 게시글 [테스트]
-//    var
-    
     var body: some View {
         GeometryReader { geometry in
                     ScrollView {
