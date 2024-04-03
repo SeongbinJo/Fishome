@@ -36,7 +36,6 @@ struct BlockForRecentlyShopNotice: View {
                                 .frame(width: recWidth * 0.7)
                                 .foregroundColor(.white)
                         }
-        //                .shadow(radius: 5, x: 0, y: 5)
                     Button(action: {
                         print("장터 최신 게시글 좋아요 눌림.")
                     }) {
