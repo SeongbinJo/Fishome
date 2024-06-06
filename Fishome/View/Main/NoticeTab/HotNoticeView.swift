@@ -29,7 +29,7 @@ struct HotNoticeView: View {
                                 HotNoticeDropDownView(HotNoticeStatus: $HotNoticeStatus, recWidth: geometry.size.width * 0.9, recheight: geometry.size.height * 0.055, imageWidth: geometry.size.width * 0.1)
                                 //뒤로가기 버튼
                                 Button(action: {
-                                    print("게시판 탭으로 이동합니다.(인기 게시판 - 뒤로가기)")
+                                    print("게시판 탭으로 이동합니다.(인기 게시판-뒤로가기)")
                                     naviPathNoticeView.removeLast()
                                 }) {
                                     ZStack {
