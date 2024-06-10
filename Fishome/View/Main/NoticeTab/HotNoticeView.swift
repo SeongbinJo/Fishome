@@ -25,7 +25,7 @@ struct HotNoticeView: View {
         GeometryReader { geometry in
                     ScrollView {
                         ZStack(alignment: .topLeading) {
-                                //인기 게시판 종류 드롭 메뉴버튼
+                                //인기 게시판 종류 드롭 메뉴 버튼
                                 HotNoticeDropDownView(HotNoticeStatus: $HotNoticeStatus, recWidth: geometry.size.width * 0.9, recheight: geometry.size.height * 0.055, imageWidth: geometry.size.width * 0.1)
                                 //뒤로가기 버튼
                                 Button(action: {
